@@ -1,0 +1,70 @@
+
+      ACIT Library & Simulator Version Follow List:
+
+5 March 2013
+
+	1) Log File Add ins for Max Step Limits
+	2) Log File Limited to 30 min ax log then log files as 001 002
+		
+17:49:50..Nov 26 2012      to     09:46:02..Nov 27 2012
+	
+        1) Thermal Cut ON/OFF Situation added to Log File
+	2) Thermal Cut slow And Fast Timers Added to Log File
+	3) Thermal Cut Enable/Disable default position changed to Enabled from UI
+	4) Thermal Cut Algorithm @ ACIT Library Bug Fixed 
+	5) Outdoor & Indoor Connection info added to USB Interface Temperature window
+	6) USB Communication temperature Data Update Min/Max Limits Added in order to
+	           prevent Comm. errrors/ Min is -50C  and max is 120C
+	7) USB error rate information added in order to count comm errors
+	8) Screen Capture bugs Fixed
+
+09:46:02..Nov 27 2012       to     14:32:54..Nov 27 2012
+
+	1) Plot Snap Chart Track Ball event error fixed
+	2) Thermal Cut checkBox uncheck problem fixed 
+	3) Data Log screen rearranged 
+
+14:32:54..Nov 27 2012     to    17:04:14..Nov 27 2012 
+
+	1) Data Log *.csv file target min max step final step row fixed
+
+17:04:14..Nov 27 2012     to        17:00:00..Nov 29 2012 
+
+	1) Fan SB Chassis Options Updated according to EEPRom data
+	2) Fan Algorithms Fixed 
+
+17:00:00..Nov 29 2012    to     16:01:48..Dec  3 2012 
+
+	1) Thermal Cut Panel moved to Compessor Menu
+	2) Code clean has done, renamed functions !!!
+
+16:01:48..Dec  3 2012    to     15:33:52..Dec 18 2012
+
+	1) Log Chart Logs 3  minutes more after Stop Command from remote
+	2) Continues Chart is enabled even at Stop !!!
+	3) Log Chart Clear Button Added
+	4) Fan Soft Off added
+
+15:33:52..Dec 18 2012  
+
+	1) Log Chart Widht extended when USB Connected
+	2) Snap chart Disabled instead Log Chart Height Extended
+	3) Log Chart Shifts to View last 1 hour... Fixed
+        4) Fan Soft Off added
+  
+
+       
+       
+
+
+
+       				
+
+
+
+
+
+
+
+
+

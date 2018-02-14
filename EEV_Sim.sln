@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EEV_Sim", "EEV_Sim\ACIT_Sim.vcproj", "{43FA010E-5A56-49D5-8DB8-93057C3C3ED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43FA010E-5A56-49D5-8DB8-93057C3C3ED3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43FA010E-5A56-49D5-8DB8-93057C3C3ED3}.Debug|Win32.Build.0 = Debug|Win32
+		{43FA010E-5A56-49D5-8DB8-93057C3C3ED3}.Release|Win32.ActiveCfg = Release|Win32
+		{43FA010E-5A56-49D5-8DB8-93057C3C3ED3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_BuildVersioningStyle = DayStamp.DeltaBaseDate.DeltaBaseDate.None
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_UpdateAssemblyVersion = True
+		BuildVersion_AssemblyInfoFilename = EEV_Sim\AssemblyInfo.cpp
+		BuildVersion_UseGlobalSettings = True
+	EndGlobalSection
+EndGlobal

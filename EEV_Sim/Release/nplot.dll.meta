@@ -1,0 +1,2090 @@
+  Windows.PlotSurface2D.resources - Embedded, ContainedInManifestFile, 
+  NPlot-icon.ico - Embedded, ContainedInManifestFile, 
+Assembly NPlot, Version=0.9.10.0, Culture=neutral, PublicKeyToken=4eda430eb4395eb1: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Assembly System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class NPlot.AdapterUtils: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Interface NPlot.AdapterUtils+IAxisSuggester: AutoLayout, AnsiClass, Class, NestedPublic, ClassSemanticsMask, Abstract
+  Methods:
+    Get(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.AdapterUtils+AxisSuggester_MultiColumns: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataRowCollection, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+AxisSuggester_IList: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Collections.IList): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+AxisSuggester_Null: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+AxisSuggester_StartStep: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(NPlot.StartStep, System.Collections.IList): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+AxisSuggester_Auto: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Collections.IList): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+AxisSuggester_RowAuto: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataRowCollection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+AxisSuggester_Rows: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataRowCollection, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+AxisSuggester_DataView: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataView, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IAxisSuggester
+  Methods:
+    Get(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface NPlot.AdapterUtils+ICounter: AutoLayout, AnsiClass, Class, NestedPublic, ClassSemanticsMask, Abstract
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class NPlot.AdapterUtils+Counter_IList: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Collections.IList): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+ICounter
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class NPlot.AdapterUtils+Counter_Null: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+ICounter
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class NPlot.AdapterUtils+Counter_Rows: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataRowCollection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+ICounter
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class NPlot.AdapterUtils+Counter_DataView: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataView): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+ICounter
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface NPlot.AdapterUtils+IDataGetter: AutoLayout, AnsiClass, Class, NestedPublic, ClassSemanticsMask, Abstract
+  Methods:
+    Get(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.AdapterUtils+DataGetter_IList: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Collections.IList): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IDataGetter
+  Methods:
+    Get(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+DataGetter_DoublesArray: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Double[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IDataGetter
+  Methods:
+    Get(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+DataGetter_Null: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IDataGetter
+  Methods:
+    Get(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+DataGetter_StartStep: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(NPlot.StartStep): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IDataGetter
+  Methods:
+    Get(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+DataGetter_Count: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IDataGetter
+  Methods:
+    Get(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+DataGetter_Rows: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataRowCollection, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IDataGetter
+  Methods:
+    Get(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+DataGetter_DataView: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataView, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.AdapterUtils+IDataGetter
+  Methods:
+    Get(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.AdapterUtils+DataGetter_MultiRows: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Data.DataRowCollection, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    PointAt(Int32, Int32): PrivateScope, Public, HideBySig
+Interface NPlot.IDrawable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.ArrowItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(NPlot.PointD): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.PointD, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.PointD, Double, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IDrawable
+  Properties:
+    System.String Text 'get set' : 
+    Double Angle 'get set' : 
+    Single PhysicalLength 'get set' : 
+    NPlot.PointD To 'get set' : 
+    Single HeadSize 'get set' : 
+    Single HeadAngle 'get set' : 
+    System.Drawing.Brush TextBrush 'get set' : 
+    System.Drawing.Color TextColor 'set' : 
+    System.Drawing.Color ArrowColor 'get set' : 
+    System.Drawing.Font TextFont 'get set' : 
+    Int32 HeadOffset 'get set' : 
+  Methods:
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Angle(): PrivateScope, Public, HideBySig, SpecialName
+    set_Angle(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalLength(): PrivateScope, Public, HideBySig, SpecialName
+    set_PhysicalLength(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_To(): PrivateScope, Public, HideBySig, SpecialName
+    set_To(PointD): PrivateScope, Public, HideBySig, SpecialName
+    get_HeadSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeadSize(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_HeadAngle(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeadAngle(Single): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_TextBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextBrush(Brush): PrivateScope, Public, HideBySig, SpecialName
+    set_TextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ArrowColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ArrowColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_TextFont(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextFont(Font): PrivateScope, Public, HideBySig, SpecialName
+    get_HeadOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeadOffset(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.AxesConstraint: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    ApplyConstraint(PhysicalAxis, PhysicalAxis, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.AxesConstraint+XPixelWorldLength: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.AxesConstraint
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, YAxisPosition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ApplyConstraint(PhysicalAxis, PhysicalAxis, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.AxesConstraint+YPixelWorldLength: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.AxesConstraint
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, XAxisPosition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ApplyConstraint(PhysicalAxis, PhysicalAxis, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.AxesConstraint+AxisPosition: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.AxesConstraint
+    Void .ctor(XAxisPosition, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(YAxisPosition, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ApplyConstraint(PhysicalAxis, PhysicalAxis, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.AxesConstraint+AspectRatio: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.AxesConstraint
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, XAxisPosition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, YAxisPosition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, XAxisPosition, YAxisPosition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ApplyConstraint(PhysicalAxis, PhysicalAxis, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Axis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.Axis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ICloneable
+  Properties:
+    Boolean TicksCrossAxis 'get set' : 
+    Double WorldMax 'get set' : 
+    Double WorldMin 'get set' : 
+    Int32 LargeTickSize 'get set' : 
+    Int32 SmallTickSize 'get set' : 
+    System.String Label 'get set' : 
+    Boolean TickTextNextToAxis 'get set' : 
+    Boolean Hidden 'get set' : 
+    Boolean Reversed 'get set' : 
+    Boolean HideTickText 'get set' : 
+    System.Drawing.Font TickTextFont 'get set' : 
+    System.Drawing.Font LabelFont 'get set' : 
+    System.String NumberFormat 'get set' : 
+    Int32 MinPhysicalLargeTickStep 'get set' : 
+    System.Drawing.Color AxisColor 'get set' : 
+    System.Drawing.Pen AxisPen 'get set' : 
+    Boolean TicksIndependentOfPhysicalExtent 'get set' : 
+    Boolean FlipTicksLabel 'get set' : 
+    Single TicksAngle 'get set' : 
+    Single TicksLabelAngle 'get set' : 
+    System.Drawing.Color LabelColor 'set' : 
+    System.Drawing.Brush LabelBrush 'get set' : 
+    System.Drawing.Color TickTextColor 'set' : 
+    System.Drawing.Brush TickTextBrush 'get set' : 
+    Boolean AutoScaleText 'get set' : 
+    Boolean AutoScaleTicks 'get set' : 
+    Double WorldLength 'get ' : 
+    Boolean IsLinear 'get ' : 
+    Single LabelOffset 'get set' : 
+    Boolean LabelOffsetAbsolute 'get set' : 
+    Boolean LabelOffsetScaled 'get set' : 
+    System.Drawing.Color Color 'set' : 
+  Methods:
+    get_TicksCrossAxis(): PrivateScope, Public, HideBySig, SpecialName
+    set_TicksCrossAxis(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_WorldMax(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WorldMax(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_WorldMin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WorldMin(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LargeTickSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_LargeTickSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SmallTickSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_SmallTickSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    set_Label(String): PrivateScope, Public, HideBySig, SpecialName
+    get_TickTextNextToAxis(): PrivateScope, Public, HideBySig, SpecialName
+    set_TickTextNextToAxis(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Hidden(): PrivateScope, Public, HideBySig, SpecialName
+    set_Hidden(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Reversed(): PrivateScope, Public, HideBySig, SpecialName
+    set_Reversed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_HideTickText(): PrivateScope, Public, HideBySig, SpecialName
+    set_HideTickText(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_TickTextFont(): PrivateScope, Public, HideBySig, SpecialName
+    set_TickTextFont(Font): PrivateScope, Public, HideBySig, SpecialName
+    get_LabelFont(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelFont(Font): PrivateScope, Public, HideBySig, SpecialName
+    get_NumberFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_NumberFormat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MinPhysicalLargeTickStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinPhysicalLargeTickStep(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_AxisColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_AxisColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_AxisPen(): PrivateScope, Public, HideBySig, SpecialName
+    set_AxisPen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    get_TicksIndependentOfPhysicalExtent(): PrivateScope, Public, HideBySig, SpecialName
+    set_TicksIndependentOfPhysicalExtent(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_FlipTicksLabel(): PrivateScope, Public, HideBySig, SpecialName
+    set_FlipTicksLabel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_TicksAngle(): PrivateScope, Public, HideBySig, SpecialName
+    set_TicksAngle(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_TicksLabelAngle(): PrivateScope, Public, HideBySig, SpecialName
+    set_TicksLabelAngle(Single): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_LabelBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelBrush(Brush): PrivateScope, Public, HideBySig, SpecialName
+    set_TickTextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_TickTextBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_TickTextBrush(Brush): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoScaleText(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoScaleText(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoScaleTicks(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoScaleTicks(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    Clone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OutOfRange(Double): PrivateScope, Public, HideBySig
+    LUB(Axis): PrivateScope, Public, HideBySig
+    WorldToPhysical(Double, PointF, PointF, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PhysicalToWorld(PointF, PointF, PointF, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DrawLabel(Graphics, Point, Point, Point): PrivateScope, Public, HideBySig
+    DrawTick(Graphics, Double, Single, String, Point, Point, Point, Point&(Out), Rectangle&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Draw(Graphics, Point, Point, Rectangle&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_WorldLength(): PrivateScope, Public, HideBySig, SpecialName
+    WorldTickPositions(Point, Point, ArrayList&(Out), ArrayList&(Out)): PrivateScope, Public, HideBySig
+    IncreaseRange(Double): PrivateScope, Public, HideBySig
+    get_IsLinear(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LabelOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelOffset(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_LabelOffsetAbsolute(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelOffsetAbsolute(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_LabelOffsetScaled(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelOffsetScaled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    set_Color(Color): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.BasePlot: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    System.String Label 'get set' : 
+    Boolean ShowInLegend 'get set' : 
+    System.Object DataSource 'get set' : 
+    System.String DataMember 'get set' : 
+  Methods:
+    get_Label(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Label(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowInLegend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowInLegend(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataSource(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataSource(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataMember(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataMember(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface NPlot.IPlot: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    NPlot.IDrawable
+  Properties:
+    System.String Label 'get set' : 
+    Boolean ShowInLegend 'get set' : 
+  Methods:
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Label(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Label(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowInLegend(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowInLegend(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SuggestXAxis(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SuggestYAxis(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.BarPlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.BasePlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    System.Object OrdinateDataTop 'get set' : 
+    System.Object OrdinateDataBottom 'get set' : 
+    System.Object AbscissaData 'get set' : 
+    System.Drawing.Pen BorderPen 'get set' : 
+    System.Drawing.Color BorderColor 'get set' : 
+    NPlot.IRectangleBrush FillBrush 'get set' : 
+    Single BarWidth 'get set' : 
+  Methods:
+    get_OrdinateDataTop(): PrivateScope, Public, HideBySig, SpecialName
+    set_OrdinateDataTop(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_OrdinateDataBottom(): PrivateScope, Public, HideBySig, SpecialName
+    set_OrdinateDataBottom(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_AbscissaData(): PrivateScope, Public, HideBySig, SpecialName
+    set_AbscissaData(Object): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_BorderPen(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderPen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_BorderColor(): PrivateScope, Public, HideBySig, SpecialName
+    get_FillBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_FillBrush(IRectangleBrush): PrivateScope, Public, HideBySig, SpecialName
+    get_BarWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_BarWidth(Single): PrivateScope, Public, HideBySig, SpecialName
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface NPlot.ISequencePlot: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.Object DataSource 'get set' : 
+    System.String DataMember 'get set' : 
+    System.Object AbscissaData 'get set' : 
+    System.Object OrdinateData 'get set' : 
+  Methods:
+    get_DataSource(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataSource(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataMember(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataMember(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AbscissaData(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbscissaData(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OrdinateData(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_OrdinateData(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class NPlot.BaseSequencePlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.BasePlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.ISequencePlot
+  Properties:
+    System.Object OrdinateData 'get set' : 
+    System.Object AbscissaData 'get set' : 
+  Methods:
+    get_OrdinateData(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_OrdinateData(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AbscissaData(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AbscissaData(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface NPlot.IPlotSurface2D: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    NPlot.Legend Legend 'get set' : 
+    Int32 LegendZOrder 'get set' : 
+    Int32 Padding 'get set' : 
+    System.Drawing.Color PlotBackColor 'set' : 
+    System.Drawing.Bitmap PlotBackImage 'set' : 
+    NPlot.IRectangleBrush PlotBackBrush 'set' : 
+    System.String Title 'get set' : 
+    Boolean AutoScaleTitle 'get set' : 
+    Boolean AutoScaleAutoGeneratedAxes 'get set' : 
+    System.Drawing.Color TitleColor 'set' : 
+    System.Drawing.Brush TitleBrush 'get set' : 
+    System.Drawing.Font TitleFont 'get set' : 
+    System.Drawing.Drawing2D.SmoothingMode SmoothingMode 'get set' : 
+    NPlot.Axis XAxis1 'get set' : 
+    NPlot.Axis XAxis2 'get set' : 
+    NPlot.Axis YAxis1 'get set' : 
+    NPlot.Axis YAxis2 'get set' : 
+    System.Collections.ArrayList Drawables 'get ' : 
+  Methods:
+    get_YAxis1(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_YAxis1(Axis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_YAxis2(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_YAxis2(Axis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Remove(IDrawable, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Drawables(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Add(IDrawable, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(IDrawable, XAxisPosition, YAxisPosition, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(IDrawable): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(IDrawable, XAxisPosition, YAxisPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Clear(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Legend(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Legend(Legend): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LegendZOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LegendZOrder(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Padding(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Padding(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PlotBackColor(Color): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PlotBackImage(Bitmap): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PlotBackBrush(IRectangleBrush): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AutoScaleTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AutoScaleTitle(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AutoScaleAutoGeneratedAxes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AutoScaleAutoGeneratedAxes(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TitleColor(Color): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TitleBrush(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TitleBrush(Brush): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TitleFont(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TitleFont(Font): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SmoothingMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SmoothingMode(SmoothingMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddAxesConstraint(AxesConstraint): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_XAxis1(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_XAxis1(Axis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_XAxis2(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_XAxis2(Axis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class NPlot.Bitmap.PlotSurface2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Drawing.Bitmap): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlotSurface2D
+  Properties:
+    System.String Title 'get set' : 
+    System.Drawing.Font TitleFont 'get set' : 
+    Int32 Padding 'get set' : 
+    NPlot.Axis XAxis1 'get set' : 
+    NPlot.Axis YAxis1 'get set' : 
+    NPlot.Axis XAxis2 'get set' : 
+    NPlot.Axis YAxis2 'get set' : 
+    NPlot.Legend Legend 'get set' : 
+    Int32 LegendZOrder 'get set' : 
+    System.Drawing.Color PlotBackColor 'set' : 
+    System.Drawing.Bitmap PlotBackImage 'set' : 
+    NPlot.IRectangleBrush PlotBackBrush 'set' : 
+    System.Drawing.Drawing2D.SmoothingMode SmoothingMode 'get set' : 
+    Int32 Width 'get ' : 
+    Int32 Height 'get ' : 
+    System.Drawing.Bitmap Bitmap 'get set' : 
+    System.Drawing.Color BackColor 'set' : 
+    Boolean AutoScaleTitle 'get set' : 
+    Boolean AutoScaleAutoGeneratedAxes 'get set' : 
+    System.Drawing.Color TitleColor 'set' : 
+    System.Drawing.Brush TitleBrush 'get set' : 
+    System.Collections.ArrayList Drawables 'get ' : 
+  Methods:
+    Draw(Graphics, Rectangle): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Title(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleFont(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleFont(Font): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Padding(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Padding(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_XAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_XAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Legend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Legend(Legend): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LegendZOrder(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LegendZOrder(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackImage(Bitmap): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackBrush(IRectangleBrush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SmoothingMode(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SmoothingMode(SmoothingMode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    ToStream(ImageFormat): PrivateScope, Public, HideBySig
+    get_Bitmap(): PrivateScope, Public, HideBySig, SpecialName
+    set_Bitmap(Bitmap): PrivateScope, Public, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    Refresh(): PrivateScope, Public, HideBySig
+    AddAxesConstraint(AxesConstraint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AutoScaleTitle(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleTitle(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoScaleAutoGeneratedAxes(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleAutoGeneratedAxes(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleBrush(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleBrush(Brush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Remove(IDrawable, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Drawables(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class NPlot.PointOLHC: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double X   'get set' : 
+    Double Open 'get set' : 
+    Double Close 'get set' : 
+    Double Low 'get set' : 
+    Double High 'get set' : 
+  Methods:
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Open(): PrivateScope, Public, HideBySig, SpecialName
+    set_Open(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Close(): PrivateScope, Public, HideBySig, SpecialName
+    set_Close(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Low(): PrivateScope, Public, HideBySig, SpecialName
+    set_Low(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_High(): PrivateScope, Public, HideBySig, SpecialName
+    set_High(Double): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.CandlePlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.BasePlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Fields:
+    Styles Style : Public
+    System.Drawing.Color BullishColor : Public
+    System.Drawing.Color BearishColor : Public
+    Int32 AutoScaleStickWidth = 0 : Public, Static, Literal, HasDefault
+  Properties:
+    System.Object OpenData 'get set' : 
+    System.Object LowData 'get set' : 
+    System.Object HighData 'get set' : 
+    System.Object CloseData 'get set' : 
+    System.Object AbscissaData 'get set' : 
+    System.Drawing.Color Color 'get set' : 
+    Int32 StickWidth 'get set' : 
+    Boolean Centered 'get set' : 
+  Methods:
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_OpenData(): PrivateScope, Public, HideBySig, SpecialName
+    set_OpenData(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_LowData(): PrivateScope, Public, HideBySig, SpecialName
+    set_LowData(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_HighData(): PrivateScope, Public, HideBySig, SpecialName
+    set_HighData(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_CloseData(): PrivateScope, Public, HideBySig, SpecialName
+    set_CloseData(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_AbscissaData(): PrivateScope, Public, HideBySig, SpecialName
+    set_AbscissaData(Object): PrivateScope, Public, HideBySig, SpecialName
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Color(): PrivateScope, Public, HideBySig, SpecialName
+    set_Color(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_StickWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_StickWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Centered(): PrivateScope, Public, HideBySig, SpecialName
+    set_Centered(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.CandlePlot+CandleStyle: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, BeforeFieldInit
+  Methods:
+    Create(CandleDataAdapter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.CandlePlot+Stick: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.CandlePlot+CandleStyle
+  Methods:
+    Create(CandleDataAdapter): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.CandlePlot+CandleDataAdapter: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Object, System.String, System.Object, System.Object, System.Object, System.Object, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    NPlot.PointOLHC Item [Int32] 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    SuggestXAxis(): PrivateScope, Public, HideBySig
+    SuggestYAxis(): PrivateScope, Public, HideBySig
+Struct NPlot.CandlePlot+Styles: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Styles Stick = 0 : Public, Static, Literal, HasDefault
+    Styles Filled = 1 : Public, Static, Literal, HasDefault
+Class NPlot.DateTimeAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.Axis
+    Void .ctor(NPlot.Axis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int64, Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.DateTime, System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.TimeSpan LargeTickStep 'get set' : 
+  Methods:
+    Clone(): PrivateScope, Public, Virtual, HideBySig
+    set_LargeTickStep(TimeSpan): PrivateScope, Public, HideBySig, SpecialName
+    get_LargeTickStep(): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.FilledRegion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(NPlot.LinePlot, NPlot.LinePlot): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.VerticalLine, NPlot.VerticalLine): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.HorizontalLine, NPlot.HorizontalLine): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IDrawable
+  Properties:
+    System.Drawing.Brush Brush 'set' : 
+    NPlot.IRectangleBrush RectangleBrush 'set' : 
+  Methods:
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    set_Brush(Brush): PrivateScope, Public, HideBySig, SpecialName
+    set_RectangleBrush(IRectangleBrush): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.Grid: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IDrawable
+  Properties:
+    GridType HorizontalGridType 'get set' : 
+    GridType VerticalGridType 'get set' : 
+    System.Drawing.Pen MajorGridPen 'get set' : 
+    System.Drawing.Pen MinorGridPen 'get set' : 
+  Methods:
+    get_HorizontalGridType(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalGridType(GridType): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalGridType(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalGridType(GridType): PrivateScope, Public, HideBySig, SpecialName
+    get_MajorGridPen(): PrivateScope, Public, HideBySig, SpecialName
+    set_MajorGridPen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    get_MinorGridPen(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinorGridPen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct NPlot.Grid+GridType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GridType None = 0 : Public, Static, Literal, HasDefault
+    GridType Coarse = 1 : Public, Static, Literal, HasDefault
+    GridType Fine = 2 : Public, Static, Literal, HasDefault
+Class NPlot.HistogramPlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.BaseSequencePlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    NPlot.IRectangleBrush RectangleBrush 'get set' : 
+    Boolean Filled 'get set' : 
+    Single BaseWidth 'get set' : 
+    Boolean Center 'get set' : 
+    Boolean IsStacked 'get ' : 
+    System.Drawing.Pen Pen 'get set' : 
+    System.Drawing.Color Color 'get set' : 
+    Double BaseOffset 'get set' : 
+  Methods:
+    get_RectangleBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_RectangleBrush(IRectangleBrush): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Filled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Filled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseWidth(Single): PrivateScope, Public, HideBySig, SpecialName
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    set_Center(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Center(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsStacked(): PrivateScope, Public, HideBySig, SpecialName
+    StackedTo(HistogramPlot): PrivateScope, Public, HideBySig
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Pen(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    set_Color(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Color(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseOffset(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseOffset(): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.HorizontalLine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, System.Drawing.Pen): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    System.String Label 'get set' : 
+    Boolean ShowInLegend 'get set' : 
+    Double OrdinateValue 'get set' : 
+    System.Drawing.Pen Pen 'get set' : 
+    Int32 PixelIndent 'get set' : 
+    Single LengthScale 'get set' : 
+  Methods:
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Label(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Label(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowInLegend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowInLegend(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_OrdinateValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_OrdinateValue(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Pen(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    get_PixelIndent(): PrivateScope, Public, HideBySig, SpecialName
+    set_PixelIndent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LengthScale(): PrivateScope, Public, HideBySig, SpecialName
+    set_LengthScale(Single): PrivateScope, Public, HideBySig, SpecialName
+Interface NPlot.IGradient: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetColor(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.ImagePlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Double[,], Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double[,]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    Double DataMin 'get set' : 
+    Double DataMax 'get set' : 
+    NPlot.IGradient Gradient 'get set' : 
+    System.String Label 'get set' : 
+    Boolean Center 'get set' : 
+    Boolean ShowInLegend 'get set' : 
+  Methods:
+    get_DataMin(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataMin(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_DataMax(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataMax(Double): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Gradient(): PrivateScope, Public, HideBySig, SpecialName
+    set_Gradient(IGradient): PrivateScope, Public, HideBySig, SpecialName
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Label(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Label(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    set_Center(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Center(): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowInLegend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowInLegend(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface NPlot.ISurface: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    DoPaint(PaintEventArgs, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DoMouseMove(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DoMouseDown(MouseEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface NPlot.ITransform2D: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Transform(Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Transform(PointD): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.LabelAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.Axis
+    Void .ctor(NPlot.Axis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean TicksBetweenText 'get set' : 
+    Boolean SortDataIfNecessary 'get set' : 
+    Int32 PhysicalSpacingMin 'get set' : 
+  Methods:
+    Clone(): PrivateScope, Public, Virtual, HideBySig
+    AddLabel(String, Double): PrivateScope, Public, HideBySig
+    get_TicksBetweenText(): PrivateScope, Public, HideBySig, SpecialName
+    set_TicksBetweenText(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SortDataIfNecessary(): PrivateScope, Public, HideBySig, SpecialName
+    set_SortDataIfNecessary(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalSpacingMin(): PrivateScope, Public, HideBySig, SpecialName
+    set_PhysicalSpacingMin(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.PointPlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.BaseSequencePlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.Marker): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    NPlot.Marker Marker 'get set' : 
+  Methods:
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    set_Marker(Marker): PrivateScope, Public, HideBySig, SpecialName
+    get_Marker(): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.LabelPointPlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.PointPlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.Marker): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    LabelPositions LabelTextPosition 'get set' : 
+    System.Object TextData 'get set' : 
+    System.Drawing.Font Font 'get set' : 
+  Methods:
+    get_LabelTextPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelTextPosition(LabelPositions): PrivateScope, Public, HideBySig, SpecialName
+    get_TextData(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextData(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_Font(): PrivateScope, Public, HideBySig, SpecialName
+    set_Font(Font): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig
+Struct NPlot.LabelPointPlot+LabelPositions: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    LabelPositions Above = 0 : Public, Static, Literal, HasDefault
+    LabelPositions Below = 1 : Public, Static, Literal, HasDefault
+    LabelPositions Left = 2 : Public, Static, Literal, HasDefault
+    LabelPositions Right = 3 : Public, Static, Literal, HasDefault
+Class NPlot.LegendBase: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Font Font 'get set' : 
+    System.Drawing.Color TextColor 'get set' : 
+    System.Drawing.Color BackgroundColor 'get set' : 
+    System.Drawing.Color BorderColor 'get set' : 
+    BorderType BorderStyle 'get set' : 
+    Boolean AutoScaleText 'get set' : 
+    Int32 NumberItemsVertically 'set' : 
+    Int32 NumberItemsHorizontally 'set' : 
+  Methods:
+    GetBoundingBox(Point, ArrayList, Single): PrivateScope, Public, HideBySig
+    Draw(Graphics, Point, ArrayList, Single): PrivateScope, Public, HideBySig
+    get_Font(): PrivateScope, Public, HideBySig, SpecialName
+    set_Font(Font): PrivateScope, Public, HideBySig, SpecialName
+    get_TextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_BackgroundColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_BackgroundColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_BorderColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_BorderStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderStyle(BorderType): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoScaleText(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoScaleText(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    set_NumberItemsVertically(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_NumberItemsHorizontally(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct NPlot.LegendBase+BorderType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    BorderType None = 0 : Public, Static, Literal, HasDefault
+    BorderType Line = 1 : Public, Static, Literal, HasDefault
+    BorderType Shadow = 2 : Public, Static, Literal, HasDefault
+Class NPlot.Legend: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.LegendBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean NeverShiftAxes 'get set' : 
+    Int32 XOffset 'get set' : 
+    Int32 YOffset 'get set' : 
+    Placement VerticalEdgePlacement 'get set' : 
+    Placement HorizontalEdgePlacement 'get set' : 
+  Methods:
+    get_NeverShiftAxes(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeverShiftAxes(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_XOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_XOffset(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_YOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_YOffset(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalEdgePlacement(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalEdgePlacement(Placement): PrivateScope, Public, HideBySig, SpecialName
+    get_HorizontalEdgePlacement(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalEdgePlacement(Placement): PrivateScope, Public, HideBySig, SpecialName
+    AttachTo(XAxisPosition, YAxisPosition): PrivateScope, Public, HideBySig
+    UpdateAxesPositions(PhysicalAxis, PhysicalAxis, PhysicalAxis, PhysicalAxis, ArrayList, Single, Int32, Rectangle, Point&(Out)): PrivateScope, Public, HideBySig
+Struct NPlot.Legend+Placement: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Placement Inside = 0 : Public, Static, Literal, HasDefault
+    Placement Outside = 1 : Public, Static, Literal, HasDefault
+Class NPlot.LinearAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.Axis
+    Void .ctor(NPlot.Axis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single ApproxNumberLargeTicks : Public
+    Double[] Mantissas : Public
+    Int32[] SmallTickCounts : Public
+  Properties:
+    Double LargeTickStep 'get set' : 
+    Double LargeTickValue 'get set' : 
+    Int32 NumberOfSmallTicks 'get set' : 
+    Double Scale 'get set' : 
+    Double Offset 'get set' : 
+  Methods:
+    Clone(): PrivateScope, Public, Virtual, HideBySig
+    AdjustedWorldValue(Double): PrivateScope, Public, HideBySig
+    set_LargeTickStep(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_LargeTickStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_LargeTickValue(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_LargeTickValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_NumberOfSmallTicks(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_NumberOfSmallTicks(): PrivateScope, Public, HideBySig, SpecialName
+    get_Scale(): PrivateScope, Public, HideBySig, SpecialName
+    set_Scale(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Offset(): PrivateScope, Public, HideBySig, SpecialName
+    set_Offset(Double): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.LinearGradient: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Drawing.Color, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IGradient
+  Properties:
+    System.Drawing.Color MaxColor 'get set' : 
+    System.Drawing.Color MinColor 'get set' : 
+    System.Drawing.Color VoidColor 'get set' : 
+  Methods:
+    get_MaxColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_MinColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_VoidColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_VoidColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    GetColor(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.LinePlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.BaseSequencePlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    Boolean Shadow 'get set' : 
+    System.Drawing.Color ShadowColor 'get set' : 
+    System.Drawing.Point ShadowOffset 'get set' : 
+    System.Drawing.Pen Pen 'get set' : 
+    System.Drawing.Color Color 'get set' : 
+  Methods:
+    DrawLineOrShadow(Graphics, PhysicalAxis, PhysicalAxis, Boolean): PrivateScope, Public, HideBySig
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Shadow(): PrivateScope, Public, HideBySig, SpecialName
+    set_Shadow(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShadowColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShadowColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ShadowOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShadowOffset(Point): PrivateScope, Public, HideBySig, SpecialName
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Pen(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    set_Color(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Color(): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.LogAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.Axis
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.Axis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double LargeTickStep 'get set' : 
+    Double LargeTickValue 'get set' : 
+    Int32 NumberSmallTicks 'set' : 
+    Double WorldMin 'get set' : 
+    Double WorldMax 'get set' : 
+    Boolean IsLinear 'get ' : 
+  Methods:
+    Clone(): PrivateScope, Public, Virtual, HideBySig
+    set_LargeTickStep(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_LargeTickStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_LargeTickValue(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_LargeTickValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_NumberSmallTicks(Int32): PrivateScope, Public, HideBySig, SpecialName
+    WorldToPhysical(Double, PointF, PointF, Boolean): PrivateScope, Public, Virtual, HideBySig
+    PhysicalToWorld(PointF, PointF, PointF, Boolean): PrivateScope, Public, Virtual, HideBySig
+    get_WorldMin(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_WorldMin(Double): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_WorldMax(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_WorldMax(Double): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsLinear(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class NPlot.Marker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(MarkerType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(MarkerType, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(MarkerType, Int32, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(MarkerType, Int32, System.Drawing.Pen): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(MarkerType, Int32, System.Drawing.Pen, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    MarkerType Type 'get set' : 
+    Boolean DropLine 'get set' : 
+    Int32 Size 'get set' : 
+    System.Drawing.Brush FillBrush 'get set' : 
+    Boolean Filled 'get set' : 
+    System.Drawing.Color Color 'get set' : 
+    System.Drawing.Pen Pen 'get set' : 
+  Methods:
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    set_Type(MarkerType): PrivateScope, Public, HideBySig, SpecialName
+    get_DropLine(): PrivateScope, Public, HideBySig, SpecialName
+    set_DropLine(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    set_Size(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_FillBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_FillBrush(Brush): PrivateScope, Public, HideBySig, SpecialName
+    get_Filled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Filled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    set_Color(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Color(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    get_Pen(): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, Int32, Int32): PrivateScope, Public, HideBySig
+Struct NPlot.Marker+MarkerType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MarkerType Cross1 = 0 : Public, Static, Literal, HasDefault
+    MarkerType Cross2 = 1 : Public, Static, Literal, HasDefault
+    MarkerType Circle = 2 : Public, Static, Literal, HasDefault
+    MarkerType Square = 3 : Public, Static, Literal, HasDefault
+    MarkerType Triangle = 4 : Public, Static, Literal, HasDefault
+    MarkerType TriangleUp = 5 : Public, Static, Literal, HasDefault
+    MarkerType TriangleDown = 6 : Public, Static, Literal, HasDefault
+    MarkerType Diamond = 7 : Public, Static, Literal, HasDefault
+    MarkerType FilledCircle = 8 : Public, Static, Literal, HasDefault
+    MarkerType FilledSquare = 9 : Public, Static, Literal, HasDefault
+    MarkerType FilledTriangle = 10 : Public, Static, Literal, HasDefault
+    MarkerType Flag = 11 : Public, Static, Literal, HasDefault
+    MarkerType FlagUp = 12 : Public, Static, Literal, HasDefault
+    MarkerType FlagDown = 13 : Public, Static, Literal, HasDefault
+    MarkerType None = 14 : Public, Static, Literal, HasDefault
+Class NPlot.MarkerItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(NPlot.PointD): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.Marker, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.Marker, NPlot.PointD): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IDrawable
+  Methods:
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.NPlotException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class NPlot.PageAlignedPhysicalAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(NPlot.PhysicalAxis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    WorldToPhysical(Double): PrivateScope, Public, HideBySig
+    WorldToPhysicalClipped(Double): PrivateScope, Public, HideBySig
+    PhysicalToWorld(Single): PrivateScope, Public, HideBySig
+Class NPlot.PhysicalAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(NPlot.Axis, System.Drawing.Point, System.Drawing.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Point PhysicalMin 'get set' : 
+    System.Drawing.Point PhysicalMax 'get set' : 
+    NPlot.Axis Axis 'get set' : 
+    Int32 PhysicalLength 'get ' : 
+    Double PixelWorldLength 'get ' : 
+  Methods:
+    GetBoundingBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Draw(Graphics, Rectangle&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WorldToPhysical(Double, Boolean): PrivateScope, Public, HideBySig
+    PhysicalToWorld(Point, Boolean): PrivateScope, Public, HideBySig
+    SetWorldLimitsFromPhysical(Point, Point): PrivateScope, Public, HideBySig
+    get_PhysicalMin(): PrivateScope, Public, HideBySig, SpecialName
+    set_PhysicalMin(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalMax(): PrivateScope, Public, HideBySig, SpecialName
+    set_PhysicalMax(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, HideBySig, SpecialName
+    set_Axis(Axis): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_PixelWorldLength(): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.PiAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.Axis
+    Void .ctor(NPlot.Axis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Clone(): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.PlotSurface2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlotSurface2D
+  Properties:
+    System.Drawing.Rectangle PlotAreaBoundingBoxCache 'get ' : 
+    NPlot.Axis XAxis1 'get set' : 
+    NPlot.Axis YAxis1 'get set' : 
+    NPlot.Axis XAxis2 'get set' : 
+    NPlot.Axis YAxis2 'get set' : 
+    NPlot.PhysicalAxis PhysicalXAxis1Cache 'get ' : 
+    NPlot.PhysicalAxis PhysicalYAxis1Cache 'get ' : 
+    NPlot.PhysicalAxis PhysicalXAxis2Cache 'get ' : 
+    NPlot.PhysicalAxis PhysicalYAxis2Cache 'get ' : 
+    System.String Title 'get set' : 
+    System.Drawing.Font TitleFont 'get set' : 
+    Int32 Padding 'get set' : 
+    System.Drawing.Color TitleColor 'set' : 
+    System.Drawing.Brush TitleBrush 'get set' : 
+    System.Drawing.Color PlotBackColor 'set' : 
+    System.Drawing.Bitmap PlotBackImage 'set' : 
+    NPlot.IRectangleBrush PlotBackBrush 'set' : 
+    System.Drawing.Drawing2D.SmoothingMode SmoothingMode 'get set' : 
+    NPlot.Legend Legend 'get set' : 
+    Boolean AutoScaleTitle 'get set' : 
+    Boolean AutoScaleAutoGeneratedAxes 'get set' : 
+    System.Collections.ArrayList Drawables 'get ' : 
+    Int32 LegendZOrder 'get set' : 
+  Methods:
+    get_PlotAreaBoundingBoxCache(): PrivateScope, Public, HideBySig, SpecialName
+    HitTest(Point): PrivateScope, Public, HideBySig
+    get_XAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_XAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PhysicalXAxis1Cache(): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalYAxis1Cache(): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalXAxis2Cache(): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalYAxis2Cache(): PrivateScope, Public, HideBySig, SpecialName
+    get_Title(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleFont(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleFont(Font): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Padding(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Padding(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleBrush(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleBrush(Brush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackImage(Bitmap): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackBrush(IRectangleBrush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SmoothingMode(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SmoothingMode(SmoothingMode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Add(IDrawable): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Draw(Graphics, Rectangle): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Legend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Legend(Legend): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AddAxesConstraint(AxesConstraint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AutoScaleTitle(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleTitle(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoScaleAutoGeneratedAxes(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleAutoGeneratedAxes(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Remove(IDrawable, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Drawables(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    WhichXAxis(IPlot): PrivateScope, Public, HideBySig
+    WhichYAxis(IPlot): PrivateScope, Public, HideBySig
+    get_LegendZOrder(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LegendZOrder(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Struct NPlot.PlotSurface2D+XAxisPosition: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XAxisPosition Top = 1 : Public, Static, Literal, HasDefault
+    XAxisPosition Bottom = 3 : Public, Static, Literal, HasDefault
+Struct NPlot.PlotSurface2D+YAxisPosition: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    YAxisPosition Left = 1 : Public, Static, Literal, HasDefault
+    YAxisPosition Right = 3 : Public, Static, Literal, HasDefault
+Struct NPlot.PointD: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double X : Public
+    Double Y : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Interface NPlot.IRectangleBrush: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Get(Rectangle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.RectangleBrushes: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class NPlot.RectangleBrushes+Solid: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IRectangleBrush
+  Properties:
+    Solid AliceBlue 'get ' : 
+    Solid AntiqueWhite 'get ' : 
+    Solid Aqua 'get ' : 
+    Solid Aquamarine 'get ' : 
+    Solid Azure 'get ' : 
+    Solid Beige 'get ' : 
+    Solid Bisque 'get ' : 
+    Solid Black 'get ' : 
+    Solid BlanchedAlmond 'get ' : 
+    Solid Blue 'get ' : 
+    Solid BlueViolet 'get ' : 
+    Solid Brown 'get ' : 
+    Solid BurlyWood 'get ' : 
+    Solid CadetBlue 'get ' : 
+    Solid Chartreuse 'get ' : 
+    Solid Chocolate 'get ' : 
+    Solid Coral 'get ' : 
+    Solid CornflowerBlue 'get ' : 
+    Solid Cornsilk 'get ' : 
+    Solid Crimson 'get ' : 
+    Solid Cyan 'get ' : 
+    Solid DarkBlue 'get ' : 
+    Solid DarkCyan 'get ' : 
+    Solid DarkGoldenrod 'get ' : 
+    Solid DarkGray 'get ' : 
+    Solid DarkGreen 'get ' : 
+    Solid DarkKhaki 'get ' : 
+    Solid DarkMagenta 'get ' : 
+    Solid DarkOliveGreen 'get ' : 
+    Solid DarkOrange 'get ' : 
+    Solid DarkOrchid 'get ' : 
+    Solid DarkRed 'get ' : 
+    Solid DarkSalmon 'get ' : 
+    Solid DarkSeaGreen 'get ' : 
+    Solid DarkSlateBlue 'get ' : 
+    Solid DarkSlateGray 'get ' : 
+    Solid DarkTurquoise 'get ' : 
+    Solid DarkViolet 'get ' : 
+    Solid DeepPink 'get ' : 
+    Solid DeepSkyBlue 'get ' : 
+    Solid DimGray 'get ' : 
+    Solid DodgerBlue 'get ' : 
+    Solid Firebrick 'get ' : 
+    Solid FloralWhite 'get ' : 
+    Solid ForestGreen 'get ' : 
+    Solid Fuchsia 'get ' : 
+    Solid Gainsboro 'get ' : 
+    Solid GhostWhite 'get ' : 
+    Solid Gold 'get ' : 
+    Solid Goldenrod 'get ' : 
+    Solid Gray 'get ' : 
+    Solid Green 'get ' : 
+    Solid GreenYellow 'get ' : 
+    Solid Honeydew 'get ' : 
+    Solid HotPink 'get ' : 
+    Solid IndianRed 'get ' : 
+    Solid Indigo 'get ' : 
+    Solid Ivory 'get ' : 
+    Solid Khaki 'get ' : 
+    Solid Lavender 'get ' : 
+    Solid LavenderBlush 'get ' : 
+    Solid LawnGreen 'get ' : 
+    Solid LemonChiffon 'get ' : 
+    Solid LightBlue 'get ' : 
+    Solid LightCoral 'get ' : 
+    Solid LightCyan 'get ' : 
+    Solid LightGoldenrodYellow 'get ' : 
+    Solid LightGray 'get ' : 
+    Solid LightGreen 'get ' : 
+    Solid LightPink 'get ' : 
+    Solid LightSalmon 'get ' : 
+    Solid LightSeaGreen 'get ' : 
+    Solid LightSkyBlue 'get ' : 
+    Solid LightSlateGray 'get ' : 
+    Solid LightSteelBlue 'get ' : 
+    Solid LightYellow 'get ' : 
+    Solid Lime 'get ' : 
+    Solid LimeGreen 'get ' : 
+    Solid Linen 'get ' : 
+    Solid Magenta 'get ' : 
+    Solid Maroon 'get ' : 
+    Solid MediumAquamarine 'get ' : 
+    Solid MediumBlue 'get ' : 
+    Solid MediumOrchid 'get ' : 
+    Solid MediumPurple 'get ' : 
+    Solid MediumSeaGreen 'get ' : 
+    Solid MediumSlateBlue 'get ' : 
+    Solid MediumSpringGreen 'get ' : 
+    Solid MediumTurquoise 'get ' : 
+    Solid MediumVioletRed 'get ' : 
+    Solid MidnightBlue 'get ' : 
+    Solid MintCream 'get ' : 
+    Solid MistyRose 'get ' : 
+    Solid Moccasin 'get ' : 
+    Solid NavajoWhite 'get ' : 
+    Solid Navy 'get ' : 
+    Solid OldLace 'get ' : 
+    Solid Olive 'get ' : 
+    Solid OliveDrab 'get ' : 
+    Solid Orange 'get ' : 
+    Solid OrangeRed 'get ' : 
+    Solid Orchid 'get ' : 
+    Solid PaleGoldenrod 'get ' : 
+    Solid PaleGreen 'get ' : 
+    Solid PaleTurquoise 'get ' : 
+    Solid PaleVioletRed 'get ' : 
+    Solid PapayaWhip 'get ' : 
+    Solid PeachPuff 'get ' : 
+    Solid Peru 'get ' : 
+    Solid Pink 'get ' : 
+    Solid Plum 'get ' : 
+    Solid PowderBlue 'get ' : 
+    Solid Purple 'get ' : 
+    Solid Red  'get ' : 
+    Solid RosyBrown 'get ' : 
+    Solid RoyalBlue 'get ' : 
+    Solid SaddleBrown 'get ' : 
+    Solid Salmon 'get ' : 
+    Solid SandyBrown 'get ' : 
+    Solid SeaGreen 'get ' : 
+    Solid SeaShell 'get ' : 
+    Solid Sienna 'get ' : 
+    Solid Silver 'get ' : 
+    Solid SkyBlue 'get ' : 
+    Solid SlateBlue 'get ' : 
+    Solid SlateGray 'get ' : 
+    Solid Snow 'get ' : 
+    Solid SpringGreen 'get ' : 
+    Solid SteelBlue 'get ' : 
+    Solid Tan  'get ' : 
+    Solid Teal 'get ' : 
+    Solid Thistle 'get ' : 
+    Solid Tomato 'get ' : 
+    Solid Transparent 'get ' : 
+    Solid Turquoise 'get ' : 
+    Solid Violet 'get ' : 
+    Solid Wheat 'get ' : 
+    Solid White 'get ' : 
+    Solid WhiteSmoke 'get ' : 
+    Solid Yellow 'get ' : 
+    Solid YellowGreen 'get ' : 
+  Methods:
+    get_MediumOrchid(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumPurple(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumSeaGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumSlateBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumSpringGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumTurquoise(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumVioletRed(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MidnightBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MintCream(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MistyRose(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Moccasin(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_NavajoWhite(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Navy(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_OldLace(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Olive(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_OliveDrab(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Orange(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_OrangeRed(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Orchid(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PaleGoldenrod(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PaleGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PaleTurquoise(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PaleVioletRed(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PapayaWhip(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PeachPuff(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Peru(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Pink(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Plum(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PowderBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Purple(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Red(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RosyBrown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RoyalBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SaddleBrown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Salmon(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SandyBrown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SeaGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SeaShell(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Sienna(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Silver(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SkyBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SlateBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SlateGray(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Snow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SpringGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SteelBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Tan(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Teal(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Thistle(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Tomato(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Transparent(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Turquoise(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Violet(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Wheat(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_White(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_WhiteSmoke(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Yellow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_YellowGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Get(Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AliceBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_AntiqueWhite(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Aqua(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Aquamarine(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Azure(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Beige(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Bisque(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Black(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_BlanchedAlmond(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Blue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_BlueViolet(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Brown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_BurlyWood(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CadetBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Chartreuse(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Chocolate(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Coral(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CornflowerBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Cornsilk(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Crimson(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Cyan(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkCyan(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkGoldenrod(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkGray(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkKhaki(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkMagenta(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkOliveGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkOrange(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkOrchid(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkRed(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkSalmon(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkSeaGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkSlateBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkSlateGray(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkTurquoise(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkViolet(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DeepPink(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DeepSkyBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DimGray(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DodgerBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Firebrick(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FloralWhite(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ForestGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Fuchsia(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Gainsboro(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_GhostWhite(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Gold(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Goldenrod(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Gray(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Green(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_GreenYellow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Honeydew(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_HotPink(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IndianRed(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Indigo(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Ivory(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Khaki(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Lavender(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LavenderBlush(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LawnGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LemonChiffon(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightCoral(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightCyan(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightGoldenrodYellow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightGray(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightPink(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightSalmon(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightSeaGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightSkyBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightSlateGray(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightSteelBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightYellow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Lime(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LimeGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Linen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Magenta(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Maroon(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumAquamarine(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MediumBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class NPlot.RectangleBrushes+Horizontal: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Drawing.Color, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IRectangleBrush
+  Properties:
+    Horizontal FaintBlueFade 'get ' : 
+    Horizontal FaintRedFade 'get ' : 
+    Horizontal FaintGreenFade 'get ' : 
+  Methods:
+    Get(Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_FaintBlueFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintRedFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintGreenFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class NPlot.RectangleBrushes+Vertical: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Drawing.Color, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IRectangleBrush
+  Properties:
+    Vertical FaintBlueFade 'get ' : 
+    Vertical FaintRedFade 'get ' : 
+    Vertical FaintGreenFade 'get ' : 
+  Methods:
+    Get(Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_FaintBlueFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintRedFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintGreenFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class NPlot.RectangleBrushes+HorizontalCenterFade: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Drawing.Color, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IRectangleBrush
+  Properties:
+    HorizontalCenterFade FaintBlueFade 'get ' : 
+    HorizontalCenterFade FaintRedFade 'get ' : 
+    HorizontalCenterFade FaintGreenFade 'get ' : 
+  Methods:
+    Get(Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_FaintBlueFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintRedFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintGreenFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class NPlot.RectangleBrushes+VerticalCenterFade: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.Drawing.Color, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IRectangleBrush
+  Properties:
+    VerticalCenterFade FaintBlueFade 'get ' : 
+    VerticalCenterFade FaintRedFade 'get ' : 
+    VerticalCenterFade FaintGreenFade 'get ' : 
+  Methods:
+    Get(Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_FaintBlueFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintRedFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FaintGreenFade(): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct NPlot.RectangleD: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Height 'get set' : 
+    Double Width 'get set' : 
+    Double X   'get set' : 
+    Double Y   'get set' : 
+  Methods:
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Double): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.SequenceAdapter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Object, System.String, System.Object, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Count 'get ' : 
+    NPlot.PointD Item [Int32] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    SuggestXAxis(): PrivateScope, Public, HideBySig
+    SuggestYAxis(): PrivateScope, Public, HideBySig
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, HideBySig
+Class NPlot.StartStep: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Start 'get set' : 
+    Double Step 'get set' : 
+  Methods:
+    get_Start(): PrivateScope, Public, HideBySig, SpecialName
+    set_Start(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Step(): PrivateScope, Public, HideBySig, SpecialName
+    set_Step(Double): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.StepGradient: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IGradient
+  Properties:
+    Type StepType 'get set' : 
+  Methods:
+    get_StepType(): PrivateScope, Public, HideBySig, SpecialName
+    set_StepType(Type): PrivateScope, Public, HideBySig, SpecialName
+    GetColor(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct NPlot.StepGradient+Type: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Type Rainbow = 0 : Public, Static, Literal, HasDefault
+    Type RGB = 1 : Public, Static, Literal, HasDefault
+Class NPlot.StepPlot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.BaseSequencePlot
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    Boolean Center 'get set' : 
+    System.Drawing.Pen Pen 'get set' : 
+    System.Drawing.Color Color 'get set' : 
+    Boolean HideVerticalSegments 'get set' : 
+    Boolean HideHorizontalSegments 'get set' : 
+    Single WidthScale 'get set' : 
+  Methods:
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    set_Center(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Center(): PrivateScope, Public, HideBySig, SpecialName
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Pen(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    set_Color(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Color(): PrivateScope, Public, HideBySig, SpecialName
+    get_HideVerticalSegments(): PrivateScope, Public, HideBySig, SpecialName
+    set_HideVerticalSegments(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_HideHorizontalSegments(): PrivateScope, Public, HideBySig, SpecialName
+    set_HideHorizontalSegments(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_WidthScale(): PrivateScope, Public, HideBySig, SpecialName
+    set_WidthScale(Single): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.TextItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(NPlot.PointD, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IDrawable
+  Properties:
+    System.String Text 'get set' : 
+    NPlot.PointD Start 'get set' : 
+    System.Drawing.Brush TextBrush 'get set' : 
+    System.Drawing.Color TextColor 'set' : 
+    System.Drawing.Font TextFont 'get set' : 
+  Methods:
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Start(): PrivateScope, Public, HideBySig, SpecialName
+    set_Start(PointD): PrivateScope, Public, HideBySig, SpecialName
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_TextBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextBrush(Brush): PrivateScope, Public, HideBySig, SpecialName
+    set_TextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_TextFont(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextFont(Font): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.TradingDateTimeAxis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :NPlot.DateTimeAxis
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NPlot.Axis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double WorldMin 'get set' : 
+    Double WorldMax 'get set' : 
+    System.TimeSpan StartTradingTime 'get set' : 
+    System.TimeSpan EndTradingTime 'get set' : 
+    Boolean IsLinear 'get ' : 
+    Double SparseWorldLength 'get ' : 
+  Methods:
+    get_WorldMin(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_WorldMin(Double): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_WorldMax(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_WorldMax(Double): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_StartTradingTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StartTradingTime(TimeSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EndTradingTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EndTradingTime(TimeSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsLinear(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Clone(): PrivateScope, Public, Virtual, HideBySig
+    WorldToPhysical(Double, PointF, PointF, Boolean): PrivateScope, Public, Virtual, HideBySig
+    PhysicalToWorld(PointF, PointF, PointF, Boolean): PrivateScope, Public, Virtual, HideBySig
+    SparseWorldAdd(Double, Double): PrivateScope, Public, HideBySig
+    get_SparseWorldLength(): PrivateScope, Public, HideBySig, SpecialName
+    WithinTradingHours(Double): PrivateScope, Public, HideBySig
+    OnTradingDays(Double): PrivateScope, Public, HideBySig
+Class NPlot.Transform2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetTransformer(PhysicalAxis, PhysicalAxis): PrivateScope, Public, Static, HideBySig
+Class NPlot.Transform2D+DefaultTransform2D: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(NPlot.PhysicalAxis, NPlot.PhysicalAxis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.ITransform2D
+  Methods:
+    Transform(Double, Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Transform(PointD): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.Transform2D+FastTransform2D: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(NPlot.PhysicalAxis, NPlot.PhysicalAxis): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.ITransform2D
+  Methods:
+    Transform(Double, Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Transform(PointD): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.VerticalLine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, System.Drawing.Pen): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlot
+    NPlot.IDrawable
+  Properties:
+    System.String Label 'get set' : 
+    Boolean ShowInLegend 'get set' : 
+    Double AbscissaValue 'get set' : 
+    System.Drawing.Pen Pen 'get set' : 
+    Int32 PixelIndent 'get set' : 
+    Single LengthScale 'get set' : 
+  Methods:
+    DrawInLegend(Graphics, Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Label(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Label(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowInLegend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowInLegend(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SuggestXAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SuggestYAxis(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    WriteData(StringBuilder, RectangleD, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Draw(Graphics, PhysicalAxis, PhysicalAxis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AbscissaValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_AbscissaValue(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Pen(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pen(Pen): PrivateScope, Public, HideBySig, SpecialName
+    get_PixelIndent(): PrivateScope, Public, HideBySig, SpecialName
+    set_PixelIndent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LengthScale(): PrivateScope, Public, HideBySig, SpecialName
+    set_LengthScale(Single): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.Web.Design.PlotSurface2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Web.UI.Design.ControlDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetDesignTimeHtml(): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Web.PlotSurface2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Web.UI.WebControls.WebControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlotSurface2D
+  Properties:
+    System.String Title 'get set' : 
+    System.Drawing.Font TitleFont 'get set' : 
+    Int32 Padding 'get set' : 
+    NPlot.Axis XAxis1 'get set' : 
+    NPlot.Axis YAxis1 'get set' : 
+    NPlot.Axis XAxis2 'get set' : 
+    NPlot.Axis YAxis2 'get set' : 
+    System.Drawing.Color PlotBackColor 'set' : 
+    System.Drawing.Bitmap PlotBackImage 'set' : 
+    NPlot.IRectangleBrush PlotBackBrush 'set' : 
+    NPlot.Legend Legend 'get set' : 
+    Int32 LegendZOrder 'get set' : 
+    System.Drawing.Drawing2D.SmoothingMode SmoothingMode 'get set' : 
+    System.Drawing.Color BackColor 'set' : 
+    Boolean AutoScaleTitle 'get set' : 
+    Boolean AutoScaleAutoGeneratedAxes 'get set' : 
+    System.Drawing.Color TitleColor 'set' : 
+    System.Drawing.Brush TitleBrush 'get set' : 
+    System.Collections.ArrayList Drawables 'get ' : 
+  Methods:
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Title(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleFont(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleFont(Font): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Padding(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Padding(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_XAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_XAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackImage(Bitmap): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackBrush(IRectangleBrush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Legend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Legend(Legend): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LegendZOrder(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LegendZOrder(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SmoothingMode(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SmoothingMode(SmoothingMode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    AddAxesConstraint(AxesConstraint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AutoScaleTitle(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleTitle(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoScaleAutoGeneratedAxes(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleAutoGeneratedAxes(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleBrush(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleBrush(Brush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Remove(IDrawable, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Drawables(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class NPlot.Windows.PlotSurface2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.IPlotSurface2D
+    NPlot.ISurface
+  Properties:
+    Boolean ShowCoordinates 'get set' : 
+    NPlot.Legend Legend 'get set' : 
+    Int32 LegendZOrder 'get set' : 
+    Boolean AutoScaleTitle 'get set' : 
+    Boolean AutoScaleAutoGeneratedAxes 'get set' : 
+    System.String Title 'get set' : 
+    System.Drawing.Font TitleFont 'get set' : 
+    Int32 Padding 'get set' : 
+    NPlot.Axis XAxis1 'get set' : 
+    NPlot.Axis YAxis1 'get set' : 
+    NPlot.Axis XAxis2 'get set' : 
+    NPlot.Axis YAxis2 'get set' : 
+    NPlot.PhysicalAxis PhysicalXAxis1Cache 'get ' : 
+    NPlot.PhysicalAxis PhysicalYAxis1Cache 'get ' : 
+    NPlot.PhysicalAxis PhysicalXAxis2Cache 'get ' : 
+    NPlot.PhysicalAxis PhysicalYAxis2Cache 'get ' : 
+    System.Drawing.Color PlotBackColor 'set' : 
+    System.Drawing.Bitmap PlotBackImage 'set' : 
+    NPlot.IRectangleBrush PlotBackBrush 'set' : 
+    System.Drawing.Color TitleColor 'set' : 
+    System.Drawing.Brush TitleBrush 'get set' : 
+    System.Drawing.Drawing2D.SmoothingMode SmoothingMode 'get set' : 
+    Boolean DateTimeToolTip 'get set' : 
+    System.Collections.ArrayList Drawables 'get ' : 
+    PlotContextMenu RightMenu 'get set' : 
+    PlotContextMenu DefaultContextMenu 'get ' : 
+    NPlot.PlotSurface2D Inner 'get ' : 
+  Events:
+    InteractionHandler InteractionOccured: 
+    PreRefreshHandler PreRefresh: 
+  Methods:
+    get_ShowCoordinates(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowCoordinates(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    DoPaint(PaintEventArgs, Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Draw(Graphics, Rectangle): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(IDrawable, XAxisPosition, YAxisPosition, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Legend(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Legend(Legend): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LegendZOrder(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LegendZOrder(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoScaleTitle(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleTitle(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoScaleAutoGeneratedAxes(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoScaleAutoGeneratedAxes(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Title(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleFont(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleFont(Font): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Padding(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Padding(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_XAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis1(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis1(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_XAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_XAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YAxis2(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_YAxis2(Axis): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PhysicalXAxis1Cache(): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalYAxis1Cache(): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalXAxis2Cache(): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalYAxis2Cache(): PrivateScope, Public, HideBySig, SpecialName
+    set_PlotBackColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackImage(Bitmap): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PlotBackBrush(IRectangleBrush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleColor(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleBrush(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleBrush(Brush): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SmoothingMode(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SmoothingMode(SmoothingMode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    DoMouseDown(MouseEventArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DoMouseWheel(MouseEventArgs): PrivateScope, Public, HideBySig
+    DoMouseMove(MouseEventArgs, Control): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DoMouseLeave(EventArgs, Control): PrivateScope, Public, HideBySig
+    get_DateTimeToolTip(): PrivateScope, Public, HideBySig, SpecialName
+    set_DateTimeToolTip(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OriginalDimensions(): PrivateScope, Public, HideBySig
+    AddAxesConstraint(AxesConstraint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Print(Boolean): PrivateScope, Public, HideBySig
+    CopyToClipboard(): PrivateScope, Public, HideBySig
+    CopyDataToClipboard(): PrivateScope, Public, HideBySig
+    Remove(IDrawable, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Drawables(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RightMenu(): PrivateScope, Public, HideBySig, SpecialName
+    set_RightMenu(PlotContextMenu): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultContextMenu(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Inner(): PrivateScope, Public, HideBySig, SpecialName
+    CacheAxes(): PrivateScope, Public, HideBySig
+    AddInteraction(Interaction): PrivateScope, Public, HideBySig
+    RemoveInteraction(Interaction): PrivateScope, Public, HideBySig
+    add_InteractionOccured(InteractionHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_InteractionOccured(InteractionHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PreRefresh(PreRefreshHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PreRefresh(PreRefreshHandler): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.Windows.PlotSurface2D+Interactions: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, BeforeFieldInit
+Class NPlot.Windows.PlotSurface2D+Interactions+Interaction: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    DoMouseDown(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoMouseWheel(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoMouseLeave(EventArgs, Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoPaint(PaintEventArgs, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.Windows.PlotSurface2D+Interactions+RubberBandSelection: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    DoMouseDown(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Windows.PlotSurface2D+Interactions+HorizontalGuideline: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    DoPaint(PaintEventArgs, Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig
+    DoMouseLeave(EventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Windows.PlotSurface2D+Interactions+VerticalGuideline: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    DoPaint(PaintEventArgs, Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig
+    DoMouseLeave(EventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Windows.PlotSurface2D+Interactions+HorizontalDrag: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    DoMouseDown(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Windows.PlotSurface2D+Interactions+VerticalDrag: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    DoMouseDown(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Windows.PlotSurface2D+Interactions+HorizontalRangeSelection: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 MinimumPixelDistanceForSelect 'get set' : 
+    Double SmallestAllowedRange 'get set' : 
+  Methods:
+    get_MinimumPixelDistanceForSelect(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinimumPixelDistanceForSelect(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SmallestAllowedRange(): PrivateScope, Public, HideBySig, SpecialName
+    set_SmallestAllowedRange(Double): PrivateScope, Public, HideBySig, SpecialName
+    DoMouseDown(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Windows.PlotSurface2D+Interactions+AxisDrag: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single Sensitivity 'get set' : 
+  Methods:
+    DoMouseDown(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    DoMouseMove(MouseEventArgs, Control, KeyEventArgs): PrivateScope, Public, Virtual, HideBySig
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    get_Sensitivity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Sensitivity(Single): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.Windows.PlotSurface2D+Interactions+MouseWheelZoom: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+Interactions+Interaction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single Sensitivity 'get set' : 
+  Methods:
+    DoMouseUp(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    DoMouseDown(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    DoMouseWheel(MouseEventArgs, Control): PrivateScope, Public, Virtual, HideBySig
+    get_Sensitivity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Sensitivity(Single): PrivateScope, Public, HideBySig, SpecialName
+Class NPlot.Windows.PlotSurface2D+InteractionHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.Windows.PlotSurface2D+PreRefreshHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.Windows.PlotSurface2D+PlotContextMenu: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ArrayList MenuItems 'get ' : 
+    NPlot.Windows.PlotSurface2D PlotSurface2D 'set' : 
+    System.Windows.Forms.ContextMenu Menu 'get ' : 
+  Methods:
+    get_MenuItems(): PrivateScope, Public, HideBySig, SpecialName
+    set_PlotSurface2D(PlotSurface2D): PrivateScope, Public, HideBySig, SpecialName
+    SetMenuItems(ArrayList): PrivateScope, Public, HideBySig
+    get_Menu(): PrivateScope, Public, HideBySig, SpecialName
+Interface NPlot.Windows.PlotSurface2D+PlotContextMenu+IPlotMenuItem: AutoLayout, AnsiClass, Class, NestedPublic, ClassSemanticsMask, Abstract
+  Properties:
+    System.Windows.Forms.MenuItem MenuItem 'get ' : 
+  Methods:
+    get_MenuItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OnPopup(PlotContextMenu): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class NPlot.Windows.PlotSurface2D+PlotContextMenu+PlotMenuSeparator: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.Windows.PlotSurface2D+PlotContextMenu+IPlotMenuItem
+  Properties:
+    Int32 Index 'get ' : 
+    System.Windows.Forms.MenuItem MenuItem 'get ' : 
+  Methods:
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_MenuItem(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnPopup(PlotContextMenu): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.Windows.PlotSurface2D+PlotContextMenu+PlotMenuItem: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.String, Int32, System.EventHandler): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    NPlot.Windows.PlotSurface2D+PlotContextMenu+IPlotMenuItem
+  Properties:
+    System.String Text 'get ' : 
+    Int32 Index 'get ' : 
+    System.EventHandler Callback 'get ' : 
+    System.Windows.Forms.MenuItem MenuItem 'get ' : 
+  Methods:
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Callback(): PrivateScope, Public, HideBySig, SpecialName
+    get_MenuItem(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnPopup(PlotContextMenu): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class NPlot.Windows.PlotSurface2D+PlotContextMenu+PlotZoomBackMenuItem: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+PlotContextMenu+PlotMenuItem
+    Void .ctor(System.String, Int32, System.EventHandler): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    OnPopup(PlotContextMenu): PrivateScope, Public, Virtual, HideBySig
+Class NPlot.Windows.PlotSurface2D+PlotContextMenu+PlotShowCoordinatesMenuItem: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :NPlot.Windows.PlotSurface2D+PlotContextMenu+PlotMenuItem
+    Void .ctor(System.String, Int32, System.EventHandler): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    OnPopup(PlotContextMenu): PrivateScope, Public, Virtual, HideBySig
